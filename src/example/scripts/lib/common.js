@@ -419,7 +419,7 @@ define(function ($) {
                 dom = '<div class="weui_dialog_alert" id="alertDialog" style="display: block;">' +
                     '<div class="weui_mask"></div>' +
                     '<div class="weui_dialog">' +
-                    '<div class="weui_dialog_hd"><strong class="weui_dialog_title">{{title}}</strong></div>' +
+                    '<div class="weui_dialog_hd"><strong class="weui_dialog__title">{{title}}</strong></div>' +
                     '<div class="weui_dialog_bd">{{message}}</div>' +
                     '<div class="weui_dialog_ft">' +
                     '<a href="javascript:;" class="weui_btn_dialog default">{{leftBtn}}</a>' +
@@ -435,7 +435,7 @@ define(function ($) {
                 dom = '<div class="weui_dialog_alert" id="alertDialog" style="display: block;">' +
                     '<div class="weui_mask"></div>' +
                     '<div class="weui_dialog">' +
-                    '<div class="weui_dialog_hd"><strong class="weui_dialog_title">{{title}}</strong></div>' +
+                    '<div class="weui_dialog_hd"><strong class="weui_dialog__title">{{title}}</strong></div>' +
                     '<div class="weui_dialog_bd">{{message}}</div>' +
                     '<div class="weui_dialog_ft">' +
                     '<a href="javascript:;" class="weui_btn_dialog primary">{{midBtn}}</a>' +
