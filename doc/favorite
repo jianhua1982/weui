@@ -1,0 +1,99 @@
+
+-------less selector----------
+
+http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+
+7. X + Y
+ul + p {
+   color: red;
+}
+This is referred to as an adjacent selector. It will select only the element that is immediately preceded by the former element. In this case, only the first paragraph after each ul will have red text.
+
+X > Y
+div#container > ul {
+  border: 1px solid black;
+}
+The difference between the standard X Y and X > Y is that the latter will only select direct children. For example, consider the following markup.
+
+
+
+Changing Selector Order
+
+It can be useful to prepend a selector to the inherited (parent) selectors. This can be done by putting the & after current selector. For example, when using Modernizr, you might want to specify different rules based on supported features:
+
+.header {
+  .menu {
+    border-radius: 5px;
+    .no-borderradius & {
+      background-image: url('images/button-background.png');
+    }
+  }
+}
+The selector .no-borderradius & will prepend .no-borderradius to its parent .header .menu to form the.no-borderradius .header .menu on output:
+
+.header .menu {
+  border-radius: 5px;
+}
+.no-borderradius .header .menu {
+  background-image: url('images/button-background.png');
+}
+
+-------Canvas----------
+
+base64 related 'image/png'
+
+http://www.cnblogs.com/hongru/archive/2012/01/14/2322540.html
+
+http://stackoverflow.com/questions/14383557/setting-canvas-todataurl-jpg-quality
+
+http://stackoverflow.com/questions/1207190/embedding-base64-images
+
+http://base64online.org/encode/
+http://base64online.org/decode/
+
+-------营销动画页面----------
+
+http://visa.uncle-ad.com/highcard/index.html
+
+http://visa.uncle-ad.com/haitao/index.html
+
+
+http://thinkpixellab.com/pxloader/
+http://idangero.us/swiper
+
+https://ihatetomatoes.net/simple-greensock-tutorial-your-first-steps-with-gsap/
+
+-------Download them all----------
+
+http://superuser.com/questions/14403/how-can-i-download-an-entire-website
+
+HTTRACK works like a champ for copying the contents of an entire site. This tool can even grab the pieces needed to make a website with active code content work offline. I am amazed at the stuff it can replicate offline.
+
+wget -r --no-parent   http://visa.uncle-ad.com/haitao/index.html
+http://www.httrack.com/page/2/
+
+http://linuxreviews.org/quicktips/wget/
+
+
+-------image cache & preload----------
+
+http://stackoverflow.com/questions/10240110/how-do-you-cache-an-image-in-javascript
+
+There are a few things you can look at:
+
+Pre-loading your images
+Setting a cache time in an .htaccess file
+File size of images and base64 encoding them.
+
+Preloading: http://perishablepress.com/3-ways-preload-images-css-javascript-ajax/
+
+Caching: http://www.askapache.com/htaccess/speed-up-sites-with-htaccess-caching.html
+
+There are a couple different thoughts for base64 encoding, some say that the http requests bog down bandwidth, while others say that the "perceived" loading is better. I'll leave this up in the air.
+
+https://github.com/chrisben/imgcache.js/blob/master/js/imgcache.js
+
+
+Speed Up Sites with htaccess Caching
+http://www.askapache.com/htaccess/speed-up-sites-with-htaccess-caching.html
+
