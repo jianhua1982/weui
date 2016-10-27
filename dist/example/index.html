@@ -204,12 +204,33 @@
                     <img src="./images/icon_nav_z-index.png" alt="">
                 </div>
             </li>
+
+            <!--sample projects-->
+            <li>
+                <div class="weui-flex js_category">
+                    <p class="weui-flex__item">exercises</p>
+                    <img src="./images/icon_nav_form.png" alt="">
+                </div>
+                <div class="page__category js_categoryInner">
+                    <div class="weui-cells page__category-content">
+                        <a class="weui-cell weui-cell_access js_item" data-id="up" href="javascript:;">
+                            <div class="weui-cell__bd">
+                                <p>up</p>
+                            </div>
+                            <div class="weui-cell__ft"></div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
         </ul>
     </div>
     <div class="page__ft">
         <a href="javascript:home()"><img src="./images/icon_footer.png" /></a>
     </div>
 </div>
+
+
 <script type="text/javascript">
     $(function(){
         var winH = $(window).height();
@@ -1770,6 +1791,193 @@
     </div>
 </div>
 </script>
+
+    <!--exercises-->
+    <script type="text/html" id="tpl_up">
+
+<div class="hd">
+    <h1 class="page_title">商户入网</h1>
+</div>
+
+<div class="bd">
+    <!--<div class="hd">-->
+        <!--<h1 class="page_title">商户入网</h1>-->
+    <!--</div>-->
+
+    <section>
+        <div class="weui_cells_title">商户名称</div>
+        <div class="weui_cells weui_cells_access">
+            <div class="weui_cell">
+                <input class="weui_input" placeholder="格瓦拉生活科技有限公司"/>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="weui_cells_title">用户联登，OAuth授权回调域名</div>
+        <div class="weui_cells weui_cells_access">
+            <div class="weui_cell">
+                <input class="weui_input" placeholder="m.abcde.com"/>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="weui_cells_title">JSSDK插件访问安全域名(最多可以填写3个)</div>
+        <div class="weui_cells weui_cells_access">
+            <div class="weui_cell">
+                <input class="weui_input" placeholder="m.gewara.com"/>
+            </div>
+
+            <div class="weui_cell">
+                <input class="weui_input" placeholder="pay.gewara.com"/>
+            </div>
+
+            <div class="weui_cell">
+                <input class="weui_input" placeholder="没有就不填"/>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="weui_cells_title">接入方联系方式</div>
+        <div class="weui_cells weui_cells_access">
+            <div class="weui_cell">
+                <input class="weui_input" placeholder="手机号码"/>
+            </div>
+
+            <div class="weui_cell">
+                <input class="weui_input" placeholder="电子邮箱"/>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="weui_cells_title">用户联登OAUTH授权SCOPE选项</div>
+        <div class="weui_cells weui_cells_radio">
+            <label class="weui_cell weui_check_label" for="x11">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>静默授权 (upapi_base)</p>
+                </div>
+                <div class="weui_cell_ft">
+                    <input type="radio" class="weui_check" name="radio1" id="x11" checked="checked">
+                    <span class="weui_icon_checked"></span>
+                </div>
+            </label>
+            <label class="weui_cell weui_check_label" for="x12">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>显示授权 (upapi_userinfo)</p>
+                </div>
+                <div class="weui_cell_ft">
+                    <input type="radio" name="radio1" class="weui_check" id="x12">
+                    <span class="weui_icon_checked"></span>
+                </div>
+            </label>
+            <label class="weui_cell weui_check_label" for="x13">
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>超级授权 (upapi_userinfo_super)</p>
+                </div>
+                <div class="weui_cell_ft">
+                    <input type="radio" name="radio1" class="weui_check" id="x13">
+                    <span class="weui_icon_checked"></span>
+                </div>
+            </label>
+        </div>
+    </section>
+
+    <section>
+        <div class="weui_cells_title">JSSDK插件访问权限</div>
+        <div class="weui_cells weui_cells_checkbox">
+            <label class="weui_cell weui_check_label" for="s11">
+                <div class="weui_cell_hd">
+                    <input type="checkbox" class="weui_check" name="checkbox1" id="s11" checked="checked">
+                    <i class="weui_icon_checked"></i>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>addBankCard</p>
+                </div>
+            </label>
+            <label class="weui_cell weui_check_label" for="s12">
+                <div class="weui_cell_hd">
+                    <input type="checkbox" name="checkbox1" class="weui_check" id="s12" checked="checked">
+                    <i class="weui_icon_checked"></i>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>setNavigationBarTitle</p>
+                </div>
+            </label>
+            <label class="weui_cell weui_check_label" for="s13">
+                <div class="weui_cell_hd">
+                    <input type="checkbox" class="weui_check" name="checkbox1" id="s13" checked="checked">
+                    <i class="weui_icon_checked"></i>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>setNavigationBarRightButton</p>
+                </div>
+            </label>
+            <label class="weui_cell weui_check_label" for="s14">
+                <div class="weui_cell_hd">
+                    <input type="checkbox" name="checkbox1" class="weui_check" id="s14" checked="checked">
+                    <i class="weui_icon_checked"></i>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>scanQRCode</p>
+                </div>
+            </label>
+            <label class="weui_cell weui_check_label" for="s15">
+                <div class="weui_cell_hd">
+                    <input type="checkbox" class="weui_check" name="checkbox1" id="s15" checked="checked">
+                    <i class="weui_icon_checked"></i>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>closeWebApp</p>
+                </div>
+            </label>
+            <label class="weui_cell weui_check_label" for="s16">
+                <div class="weui_cell_hd">
+                    <input type="checkbox" name="checkbox1" class="weui_check" id="s16" checked="checked">
+                    <i class="weui_icon_checked"></i>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>showFlashInfo</p>
+                </div>
+            </label>
+            <label class="weui_cell weui_check_label" for="s16">
+                <div class="weui_cell_hd">
+                    <input type="checkbox" name="checkbox1" class="weui_check" id="s17" >
+                    <i class="weui_icon_checked"></i>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>pay</p>
+                </div>
+            </label>
+        </div>
+    </section>
+
+    <div class="bd spacing">
+        <a href="javascript:;" class="weui_btn weui_btn_primary">添加商户</a>
+        <!--<a href="javascript:;" class="weui_btn weui_btn_disabled weui_btn_primary">按钮</a>-->
+    </div>
+
+    <section>
+        <div class="weui_cells_title">系统输出接入方凭证</div>
+        <div class="weui_cells weui_cells_access">
+            <div class="weui_cell">
+                <input class="weui_input" placeholder="appId:  a594**************81527"/>
+            </div>
+
+            <div class="weui_cell">
+                <input class="weui_input" placeholder="secret:  2d6f**************63f0e"/>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+</script>
+
+
     <script src="./zepto.min.js"></script>
     <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <script src="./example.js"></script>
