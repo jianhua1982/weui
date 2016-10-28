@@ -213,12 +213,19 @@
                 </div>
                 <div class="page__category js_categoryInner">
                     <div class="weui-cells page__category-content">
-                        <a class="weui-cell weui-cell_access js_item" data-id="up" href="javascript:;">
+                        <!--<a class="weui-cell weui-cell_access js_item" data-id="up" href="javascript:;">-->
+                            <!--<div class="weui-cell__bd">-->
+                                <!--<p>up</p>-->
+                            <!--</div>-->
+                            <!--<div class="weui-cell__ft"></div>-->
+                        <!--</a>-->
+                        <a class="weui-cell weui-cell_access js_item" data-id="cheng" href="javascript:;">
                             <div class="weui-cell__bd">
-                                <p>up</p>
+                                <p>cheng</p>
                             </div>
                             <div class="weui-cell__ft"></div>
                         </a>
+
                     </div>
                 </div>
             </li>
@@ -1813,6 +1820,10 @@
         height: 1em;
         color: #979797;
     }
+
+    .up .tips p {
+        font-size: 0.9rem;
+    }
 </style>
 
 <div class="page__hd">
@@ -1906,32 +1917,7 @@
         </div>
     </section>
 
-    <!--<section>-->
-        <!--<div class="weui-cells___title">UPSDK接口权限分组</div>-->
-
-        <!--<div class="weui-cells___title common_interfaces">通用接口, 所有接入方签名成功以后，均可访问如下接口</div>-->
-        <!--<ul class="weui-cells">-->
-            <!--<li class="weui-cell">addBankCard</li>-->
-            <!--<li class="weui-cell">setNavigationBarTitle</li>-->
-            <!--<li class="weui-cell">setNavigationBarRightButton</li>-->
-            <!--<li class="weui-cell">scanQRCode</li>-->
-            <!--<li class="weui-cell">closeWebApp</li>-->
-            <!--<li class="weui-cell">scanQRCode</li>-->
-            <!--<li class="weui-cell">showFlashInfo</li>-->
-        <!--</ul>-->
-
-        <!--<div class="weui-cell weui-cell_switch">-->
-            <!--<div class="weui-cell_hd weui-cell_primary">授权的商户才能访问高级接口，请打开右边开关</div>-->
-            <!--<div class="weui-cell__ft">-->
-                <!--<input class="weui-switch" type="checkbox"/>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<ul class="weui-cells">-->
-            <!--<li class="weui-cell">pay</li>-->
-        <!--</ul>-->
-    <!--</section>-->
-
-    <section>
+    <section style="display: none;">
         <div class="weui-cells___title">UPSDK插件访问权限</div>
         <div class="weui-cells weui-cells_checkbox">
             <label class="weui-cell weui-check_label" for="s11">
@@ -2000,11 +1986,10 @@
         </div>
     </section>
 
-
     <section>
         <div class="weui-cells___title">其他注意事项</div>
         <div class="weui-cells">
-            <div class="weui-cell">
+            <div class="weui-cell tips">
                 <div class="weui-cell__bd weui-cell_primary">
                     <p>1. 生活频道入口展示图片两张(90*90, 135*135), 以及底部显示文字；</p>
                     <p>2. 请设置必须登录标识；</p>
@@ -2014,25 +1999,47 @@
         </div>
     </section>
 
-
-    <!--<section>-->
-        <!--<div class="weui-cells___title">生活频道入口展示</div>-->
-        <!--<div class="weui-grids">-->
-            <!--<div class="weui-grid">-->
-                <!--<img src="">-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</section>-->
-
-    <!--<section>-->
-        <!--<div class="weui-cells___title">生活频道入口展示</div>-->
-        <!--<div class="weui-grids">-->
-
-        <!--</div>-->
-    <!--</section>-->
+    <section>
+        <div class="weui-cells___title">生活频道图片上传</div>
 
 
+        <div class="weui-uploader__bd">
+            <ul class="weui-uploader__files" id="uploaderFiles">
+                <li class="weui-uploader__file" style="background-image:url(./images/pic_160.png)"></li>
+                <li class="weui-uploader__file" style="background-image:url(./images/pic_160.png)"></li>
+                <li class="weui-uploader__file" style="background-image:url(./images/pic_160.png)"></li>
+                <li class="weui-uploader__file weui-uploader__file_status" style="background-image:url(./images/pic_160.png)">
+                    <div class="weui-uploader__file-content">
+                        <i class="weui-icon-warn"></i>
+                    </div>
+                </li>
+                <li class="weui-uploader__file weui-uploader__file_status" style="background-image:url(./images/pic_160.png)">
+                    <div class="weui-uploader__file-content">50%</div>
+                </li>
+            </ul>
+            <div class="weui-uploader__input-box">
+                <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple />
+            </div>
+        </div>
 
+
+        <div class="weui-grids">
+            <div class="weui-cell">
+                <p> 90&nbsp*&nbsp90 </p>
+                <div class="weui-uploader__input-box">
+                    <input id="uploaderInput-1" class="weui-uploader__input" type="file" accept="image/*" multiple />
+                </div>
+            </div>
+
+            <div class="weui-cell">
+                <p> 135&nbsp*&nbsp135 </p>
+                <div class="weui-uploader__input-box">
+                    <input id="uploaderInput-2" class="weui-uploader__input" type="file" accept="image/*" multiple />
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <div class="bd spacing">
         <a href="javascript:;" class="weui-btn weui-btn_primary">添加商户</a>
@@ -2051,6 +2058,9 @@
             </div>
         </div>
     </section>
+
+
+
 </div>
 
 

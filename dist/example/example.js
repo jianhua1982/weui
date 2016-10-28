@@ -49,6 +49,7 @@ $(function () {
         },
         go: function (to) {
             var config = this._find('name', to);
+            debugger
             if (!config) {
                 return;
             }
@@ -252,7 +253,7 @@ $(function () {
     function setPageManager(){
         var pages = {}, tpls = $('script[type="text/html"]');
         var winH = $(window).height();
-
+debugger
         for (var i = 0, len = tpls.length; i < len; ++i) {
             var tpl = tpls[i], name = tpl.id.replace(/tpl_/, '');
             pages[name] = {
